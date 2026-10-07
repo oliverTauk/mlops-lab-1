@@ -65,11 +65,12 @@ Yes, `data.dvc` was created. It is a small YAML pointer, e.g.:
 
 ```yaml
 outs:
-- md5: 3a1f...e9.dir
-  size: 1150000000
-  nfiles: 16643
+- md5: 39f0acac94304ed234c9a682eed511e3.dir
+  size: 1383529306
+  nfiles: 36578
   hash: md5
   path: data
+
 ```
 
 `md5` is the hash of the whole directory (the `.dir` suffix means it points to a manifest listing every file's hash), plus total size, file count and the tracked path. Committing this file to git is how a code commit is tied to an exact version of the data.
